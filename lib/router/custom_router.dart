@@ -5,6 +5,8 @@ import 'package:flutter_localization_master/pages/not_found_page.dart';
 import 'package:flutter_localization_master/pages/settings_page.dart';
 import 'package:flutter_localization_master/router/route_constants.dart';
 
+import 'route_constants.dart';
+
 class CustomRouter {
   static Route<dynamic> generatedRoute(RouteSettings settings) {
     switch (settings.name) {
@@ -14,6 +16,8 @@ class CustomRouter {
         return MaterialPageRoute(builder: (_) => AboutPage());
       case settingsRoute:
         return MaterialPageRoute(builder: (_) => SettingsPage());
+      // case moqademaRoute:
+      //   return MaterialPageRoute(builder: (_) => MoqademaScreen());
       default:
         return MaterialPageRoute(builder: (_) => NotFoundPage());
     }

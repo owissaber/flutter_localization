@@ -50,7 +50,7 @@ class _MyAppState extends State<MyApp> {
       return MaterialApp(
         debugShowCheckedModeBanner: false,
         title: "Flutter Localization Demo",
-        theme: ThemeData(primarySwatch: Colors.blue),
+        theme: ThemeData(primarySwatch: Colors.brown),
         locale: _locale,
         supportedLocales: [
           Locale("en", "US"),
